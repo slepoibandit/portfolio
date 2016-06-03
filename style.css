@@ -104,6 +104,51 @@
   border-spacing: 0.2rem;
 }
 
+.flex{
+  display: flex;
+}
+
+.block_type_container{
+  width: 100%;
+  margin: 0;
+  padding: 3% 0;
+}
+.block_type_content{
+  margin: 0 auto;
+}
+.block__speech{
+  font-weight: 700;
+  display: inline-block;
+  margin-right: 20%;
+}
+.block_type_transition{
+  width: 15%;
+  margin: 5% auto;
+  color:#996666;
+  padding: 3%;
+  transition: transform 1.5s, color 1.5s;
+}
+.block_simulate_growth:hover{
+  transform: scale(2);
+  color: #ff6666;
+}
+.block_simulate_growth:hover::after{
+  content: "Ohh..";
+}
+.block_simulate_movement:hover{
+  transform: translate(15%, 15%);
+  color: #ff6666;
+}
+.block_simulate_movement:hover::after{
+  content: "Yes!";
+}
+.block_simulate_rotation:hover{
+  transform: rotate3d(1, 0, 0, 760deg);
+  color: #ff6666;
+}
+.block_simulate_rotation:hover::after{
+  content: "More, please!"
+}
 /*Remove side margins of the center block to evenly distribute the remaining space between three blocks*/
 .block_marginless{
   margin: 0;
