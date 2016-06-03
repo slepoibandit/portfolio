@@ -153,3 +153,26 @@
 .block_marginless{
   margin: 0;
 }
+@media (max-width: 480px){
+  .block_type_responsive{
+    width: 100%;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px){
+  .block_type_responsive{
+    float: left;
+    box-sizing: border-box;
+    width: 50%;
+    margin: 1% 0;
+  }
+}
+@media (min-width: 769px){
+  .block_type_responsive{
+    float: left;
+  }
+}
+
+.footer{
+  margin: 15% auto;
+  text-align: center;
+}
