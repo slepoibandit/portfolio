@@ -62,7 +62,7 @@
 .section{
   margin: 2% auto 0;
 }
-.section__layout_float{
+.section_layout_float{
   overflow: auto;
 }
 .block_color_main{
@@ -71,24 +71,21 @@
 .block_color_contrast{
   background-color: #565656;
 }
-.block_type_float{
-  float: left;
+.block{
   width: 33%;
   margin: 0 0.25%;
+}
+.block_type_float{
+  float: left;
 }
 /*Remove side margins of the center block to evenly distribute the remaining space between three blocks*/
 .block_type_inline-block{
   display: inline-block;
-  width: 33%;
-  margin: 0 0.25%;
 }
 .block_marginless{
   margin: 0;
 }
 
-.table-layout__table{
-  border-collapse: collapse;
-}
-.table-layout__table td{
-  padding: 0;
+.table{
+  border-spacing: 0.2rem;
 }
