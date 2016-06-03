@@ -78,14 +78,33 @@
 .block_type_float{
   float: left;
 }
-/*Remove side margins of the center block to evenly distribute the remaining space between three blocks*/
+
 .block_type_inline-block{
   display: inline-block;
 }
-.block_marginless{
-  margin: 0;
+
+.section_layout_position{
+  position: relative;
+  margin-bottom: 13%;
+}
+.block_type_position{
+  position: absolute;
+}
+.block_type_position:nth-of-type(3n+1){
+  left: 0;
+}
+.block_type_position:nth-of-type(3n+2){
+  left: 33.25%;
+}
+.block_type_position:nth-of-type(3n+3){
+  right: 0;
 }
 
 .table{
   border-spacing: 0.2rem;
+}
+
+/*Remove side margins of the center block to evenly distribute the remaining space between three blocks*/
+.block_marginless{
+  margin: 0;
 }
