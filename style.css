@@ -59,40 +59,36 @@
   animation-fill-mode: forwards;
 }
 
-.float-layout{
+.section{
   margin: 2% auto 0;
+}
+.section__layout_float{
   overflow: auto;
 }
-.float-layout__block{
+.block_color_main{
+  background-color: #c09f80;
+}
+.block_color_contrast{
+  background-color: #565656;
+}
+.block_type_float{
   float: left;
   width: 33%;
   margin: 0 0.25%;
 }
 /*Remove side margins of the center block to evenly distribute the remaining space between three blocks*/
-.float-layout__block:nth-of-type(even){
-  margin: 0;
-}
-.float-layout__block_color_main{
-  background-color: #c09f80;
-}
-.float-layout__block_color_contrast{
-  background-color: #565656;
-}
-
-.inline-blocks-layout{
-  margin: 2% auto 0;
-}
-.inline-blocks-layout__block{
+.block_type_inline-block{
   display: inline-block;
   width: 33%;
   margin: 0 0.25%;
 }
-.inline-blocks-layout__block_main{
-  background-color: #56566f;
-}
-.inline-blocks-layout__block_contrast{
-  background-color: #c09f80;
-}
-.inline-blocks-layout__block:nth-of-type(even){
+.block_marginless{
   margin: 0;
+}
+
+.table-layout__table{
+  border-collapse: collapse;
+}
+.table-layout__table td{
+  padding: 0;
 }
